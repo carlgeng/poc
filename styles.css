@@ -66,21 +66,3 @@ body {
     padding-left: 10px;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* 亚光效果 */
 }
-
-/* 点缀元素 */
-.dot {
-    position: absolute;
-    border-radius: 50%;
-}
-
-.dot-blue {
-    width: 5px;
-    height: 5px;
-    background-color: #1E90FF;
-}
-
-.dot-red {
-    width: 5px;
-    height: 5px;
-    background-color: #FF4500;
-}

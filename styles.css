@@ -1,0 +1,86 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #E8ECEF; /* 浅灰色，接近白色 */
+    backdrop-filter: blur(10px); /* 模糊效果 */
+    font-family: 'Helvetica', sans-serif;
+    color: #333333; /* 深灰色字体 */
+    overflow: hidden;
+    position: relative;
+}
+
+/* 导航栏 */
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 30px;
+}
+
+.navbar a {
+    color: #333333; /* 深灰色字体 */
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* 亚光效果 */
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #1E90FF; /* 蓝色下划线 */
+    color: #1E90FF;
+}
+
+/* 标题 */
+.title {
+    position: absolute;
+    top: 200px;
+    right: 20%;
+    color: #333333; /* 深灰色字体 */
+    font-size: 72px;
+    font-weight: bold;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* 亚光效果 */
+}
+
+/* 文字说明 */
+.description {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    max-width: 300px;
+    font-size: 16px;
+    color: #333333; /* 深灰色字体 */
+    border-left: 2px solid #1E90FF; /* 蓝色边框 */
+    padding-left: 10px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* 亚光效果 */
+}
+
+/* 点缀元素 */
+.dot {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.dot-blue {
+    width: 5px;
+    height: 5px;
+    background-color: #1E90FF;
+}
+
+.dot-red {
+    width: 5px;
+    height: 5px;
+    background-color: #FF4500;
+}

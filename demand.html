@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交临床需求</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { width: 50%; margin: 0 auto; padding: 20px; }
+        textarea, input { width: 100%; padding: 10px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>提交未解决的临床需求</h2>
+        <form action="/submit_demand" method="post">
+            <label for="description">需求描述</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+            <label for="impact">影响范围</label>
+            <input type="text" id="impact" name="impact" required>
+            <label for="urgency">紧急程度</label>
+            <select id="urgency" name="urgency">
+                <option value="high">高</option>
+                <option value="medium">中</option>
+                <option value="low">低</option>
+            </select>
+            <label for="attachment">附件</label>
+            <input type="file" id="attachment" name="attachment">
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</body>
+</html>

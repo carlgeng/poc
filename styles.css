@@ -8,7 +8,8 @@ body {
     height: 100vh;
     background: #E8ECEF; /* 浅灰色，接近白色 */
     backdrop-filter: blur(10px); /* 模糊效果 */
-    font-family: '宋体', sans-serif;
+    font-family: "Noto Sans SC", sans-serif;
+    font-weight: 300;
     color: #333333; /* 深灰色字体 */
     overflow: hidden;
     position: relative;
@@ -46,14 +47,28 @@ body {
 /* 标题 */
 .title {
     position: absolute;
-    top: 200px;
-    right: 40%;
+    top: 400px;
+    right: 30%;
     color: #333333; /* 深灰色字体 */
     font-size: 144px;
-    font-weight: bold;
+    font-weight: normal;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* 亚光效果 */
 }
+strong {  
+    font-weight: 700;  
+}  
+bigstrong {
+    font-weight: 900;
+}
+em {  
+    font-style: italic;  
+}  
 
+thin {  
+    /* 大多数中文字体不支持精确的font-stretch值 */  
+    /* font-stretch: 150%; */  
+    letter-spacing: 0.1em; /* 替代方案：调整字间距 */  
+}  
 /* 文字说明 */
 .description {
     position: absolute;

@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>提交创新解决方案</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .container { width: 50%; margin: 0 auto; padding: 20px; }
-        textarea, input, select { width: 100%; padding: 10px; margin: 5px 0; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -16,7 +12,6 @@
         <form action="/submit_solution" method="post">
             <label for="demand">关联需求</label>
             <select id="demand" name="demand">
-                <!-- 动态加载需求列表 -->
                 <option value="demand1">需求1</option>
                 <option value="demand2">需求2</option>
             </select>

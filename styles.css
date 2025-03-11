@@ -9,7 +9,7 @@ body {
     background: #E8ECEF; /* 浅灰色，接近白色 */
     backdrop-filter: blur(10px); /* 模糊效果 */
     font-family: "Noto Sans SC", sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     color: #333333; /* 深灰色字体 */
     overflow: hidden;
     position: relative;
@@ -50,8 +50,8 @@ body {
     top: 400px;
     right: 30%;
     color: #333333; /* 深灰色字体 */
-    font-size: 144px;
-    font-weight: normal;
+    font-size: 100px;
+    font-weight: lighter;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* 亚光效果 */
 }
 strong {  

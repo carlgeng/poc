@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>概念验证</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://carlgeng.github.io data:;">
+    <title>首页</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: white; padding: 10px; text-align: center; }
+        nav { background-color: #555; padding: 10px; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .content { padding: 20px; }
+    </style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">关于</a></li>
-            <li><a href="#">联系</a></li>
-        </ul>
+    <header>
+        <h1>欢迎来到医疗创新平台</h1>
+    </header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="demand.html">需求提交</a>
+        <a href="solution.html">解决方案</a>
+        <a href="review.html">评审</a>
+        <a href="profile.html">个人中心</a>
     </nav>
-
-    <!-- 标题 -->
-    <h1 class="title">概念验证</h1>
-
-    <!-- 文字说明 -->
-    <div class="description">
-        概念验证是将创新想法转化为可行方案的关键步骤。通过实验和验证，我们确保每个概念都能在现实中发挥作用。
+    <div class="content">
+        <h2>最新临床需求</h2>
+        <ul>
+            <li>需求1：...</li>
+            <li>需求2：...</li>
+        </ul>
+        <h2>热门创新解决方案</h2>
+        <ul>
+            <li>方案1：...</li>
+            <li>方案2：...</li>
+        </ul>
     </div>
 </body>
-</html>

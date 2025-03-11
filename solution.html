@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交创新解决方案</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { width: 50%; margin: 0 auto; padding: 20px; }
+        textarea, input, select { width: 100%; padding: 10px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>提交创新解决方案</h2>
+        <form action="/submit_solution" method="post">
+            <label for="demand">关联需求</label>
+            <select id="demand" name="demand">
+                <!-- 动态加载需求列表 -->
+                <option value="demand1">需求1</option>
+                <option value="demand2">需求2</option>
+            </select>
+            <label for="description">解决方案描述</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+            <label for="effect">预期效果</label>
+            <input type="text" id="effect" name="effect" required>
+            <label for="difficulty">实施难度</label>
+            <select id="difficulty" name="difficulty">
+                <option value="high">高</option>
+                <option value="medium">中</option>
+                <option value="low">低</option>
+            </select>
+            <label for="attachment">附件</label>
+            <input type="file" id="attachment" name="attachment">
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</body>
+</html>

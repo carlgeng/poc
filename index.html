@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #333; color: white; padding: 10px; text-align: center; }
-        nav { background-color: #555; padding: 10px; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; }
-        .content { padding: 20px; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>欢迎来到医疗创新平台</h1>
-    </header>
-    <nav>
-        <a href="index.html">首页</a>
-        <a href="demand.html">需求提交</a>
-        <a href="solution.html">解决方案</a>
-        <a href="review.html">评审</a>
-        <a href="profile.html">个人中心</a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="demand.html">需求提交</a></li>
+            <li><a href="solution.html">解决方案</a></li>
+            <li><a href="review.html">评审</a></li>
+            <li><a href="profile.html">个人中心</a></li>
+        </ul>
     </nav>
-    <div class="content">
+    <div class="title">医疗创新平台</div>
+    <div class="description">助力国内领头医院解决未满足的临床需求，推动医疗创新。</div>
+    <div class="container content">
         <h2>最新临床需求</h2>
         <ul>
             <li>需求1：...</li>
@@ -36,3 +31,4 @@
         </ul>
     </div>
 </body>
+</html>

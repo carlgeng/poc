@@ -1,24 +1,66 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&family=Noto+Sans+SC:wght@100;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>网页框架-包括导航栏居中</title>
 </head>
 <body>
-    <nav class="navbar">
+    <!-- 导航栏 -->
+    <div class="navbar">
         <ul>
             <li><a href="index.html">首页</a></li>
             <li><a href="demand.html">需求提交</a></li>
             <li><a href="solution.html">解决方案</a></li>
             <li><a href="review.html">评审</a></li>
             <li><a href="profile.html">个人中心</a></li>
-        </ul>
-    </nav>
-    <div class="title">创新概念验证-源于<bigstrong>需求</bigstrong>归于<bigstrong>需求</bigstrong></div>
-    <div class="description">助力解决未满足的临床需求，<thin>推动生命科学的创新。</thin></div>
+        </ul> 
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="main-container">
+        <!-- 第一层：三个框 -->
+        <div class="layer-1">
+            <div class="box box-1">
+                <p>创新概念验证</p>
+            </div>
+            <div class="box box-2">
+                <div class="sub-box-above">
+                    源于
+                </div>
+                <div class="sub-box-below">
+                    归于
+                </div>
+            </div>
+            <div class="box box-3">
+                <p>需求</p>
+            </div>
+        </div>
+
+        <!-- 第二层：两个框 -->
+        <div class="layer-2">
+            <div class="box box-4">
+                <p>第二层第一个框的内容。</p>
+            </div>
+            <div class="box box-5">
+                <p>第二层第二个框的内容，文字可以更长一些。</p>
+            </div>
+        </div>
+
+        <!-- 第三层：两个框 -->
+        <div class="layer-3">
+            <div class="box box-6">
+                <p>第三层第一个框的内容。</p>
+            </div>
+            <div class="box box-7">
+                <p>第三层第二个框的内容，测试自适应效果。</p>
+            </div>
+        </div>
+    </div>
     <div class="container content">
         <h2>最新临床需求</h2>
         <ul>
@@ -30,6 +72,11 @@
             <li>方案1：...</li>
             <li>方案2：...</li>
         </ul>
+    </div>
+    <div class="description">助力解决未满足的临床需求，<thin>推动生命科学的创新。</thin></div>
+    <!-- 底部信息 -->
+    <div class="footer">
+        <p>底部信息 © 2025</p>
     </div>
 </body>
 </html>

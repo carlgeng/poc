@@ -1,85 +1,218 @@
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* 基本样式 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    height: 100vh;
-    background: #E8ECEF; /* 浅灰色，接近白色 */
-    backdrop-filter: blur(10px); /* 模糊效果 */
-    font-family: "Noto Sans SC", sans-serif;
-    font-weight: 100;
-    color: #333333; /* 深灰色字体 */
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #E8ECEF;
+  backdrop-filter: blur(10px);
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 100;
+  color: #130f0f;
+  min-height: 100vh;
 }
 
-/* 导航栏 */
+/* 导航栏样式 */
 .navbar {
-    position: absolute;
-    top: 20px;
-    left: 100px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
+.nav-left {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(232, 236, 239, 0.95);
+  z-index: 1000;
 }
 
-.navbar li {
-    margin-right: 30px;
+.nav-left li {
+  margin: 20px 0;
 }
 
-.navbar a {
-    color: #333333; /* 深灰色字体 */
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* 亚光效果 */
+.nav-left a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
-.navbar a:hover {
-    border-bottom: 2px solid #1E90FF; /* 蓝色下划线 */
-    color: #1E90FF;
+.nav-left a:hover {
+  color: #1E90FF;
+  border-bottom: 2px solid #1E90FF;
 }
 
-/* 标题 */
-.title {
-    position: absolute;  
-  top: 50%;  
-  left: 50%;  
-  transform: translate(-50%, -50%);
-    color: #333333; /* 深灰色字体 */
-    font-size: 80px;
-    font-weight: lighter;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* 亚光效果 */
+.nav-right {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: 20px;
+  top: 20px;
 }
-strong {  
-    font-weight: 700;  
-}  
-bigstrong {
-    font-size: 200px;
-    font-weight: 900;
-}
-em {  
-    font-style: italic;  
-}  
 
+.nav-right li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-right a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-right a:hover {
+  color: #1E90FF;
+  border-bottom: 2px solid #1E90FF;
+}
+
+.main-container {
+  margin-left: 240px;
+  margin-right: 100px;
+  padding: 20px;
+  width: calc(100% - 340px);
+}
+
+/* 主要内容区域 */
+/*.main-container {
+  margin-top: 60px;
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}*/
+/* 第一层：三个并行框 */
+.layer-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* 第二、三层：每层两个并行框 */
+.layer-2, .layer-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: lighter; 
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* 通用框样式 */
+.box {
+  min-width: 50px;
+}
+
+.box-1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #333333;
+  font-size: 80px;
+  font-weight: lighter;
+  flex-wrap: nowrap;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap; /* 防止文字换行 */
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平居中 */
+  font-weight: normal;
+  font-size: 50px;
+  white-space: nowrap;
+  height: auto; /* 自适应高度，避免固定高度拉开间距 */
+}
+
+.sub-box-above {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: flex-end; /* 文字靠底部 */
+  margin-bottom: 0; /* 去掉底部外边距 */
+  padding-bottom: 0; /* 去掉底部内边距 */
+  white-space: nowrap;
+}
+.sub-box-below {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: flex-start; /* 文字靠顶部 */
+  margin-top: 0; /* 去掉顶部外边距 */
+  padding-top: 0; /* 去掉顶部内边距 */
+  white-space: nowrap;
+}
+
+.box-3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 200px;
+  font-weight: 900;
+  margin-top: 0; /* 去掉顶部外边距 */
+  padding-top: 0; /* 去掉顶部内边距 */
+  margin-bottom: 0; /* 去掉底部外边距 */
+  padding-bottom: 0; /* 去掉底部内边距 */
+  flex-wrap: nowrap;
+  white-space: nowrap; /* 防止文字换行 */
+}
+.box-4, .box-5, .box-6, .box-7 {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* 底部信息 */
+.footer {
+  position: fixed;  /* 改为固定定位 */
+  left: 0;          /* 从左侧开始 */
+  right: 0;         /* 到右侧结束 */
+  bottom: 0;        /* 固定在底部 */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+  z-index: 1000;    /* 确保在最上层 */
+}
+
+/* 其他样式 */
 thin {  
-    /* 大多数中文字体不支持精确的font-stretch值 */  
-    /* font-stretch: 150%; */  
-    letter-spacing: 0.1em; /* 替代方案：调整字间距 */  
-}  
-/* 文字说明 */
+  letter-spacing: 0.1em;  
+}
+
 .description {
-    position: absolute;
-    bottom: 50px;
-    left: 100px;
-    max-width: 300px;
-    font-size: 16px;
-    color: #333333; /* 深灰色字体 */
-    border-left: 2px solid #1E90FF; /* 蓝色边框 */
-    padding-left: 10px;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* 亚光效果 */
+  position: absolute;
+  bottom: 300px;
+  left: 100px;
+  max-width: 300px;
+  font-size: 16px;
+  color: #333333;
+  border-left: 2px solid #1E90FF;
+  padding-left: 10px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }

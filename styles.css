@@ -41,23 +41,6 @@ body {
   align-items: center;
 }
 
-.nav-left li {
-  margin: 0 15px; /* 调整间距 */
-}
-
-.nav-left a {
-  color: #333333;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.3s;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-}
-
-.nav-left a:hover {
-  color: #1E90FF;
-  border-bottom: 2px solid #1E90FF;
-}
-
 .nav-right {
   list-style: none; /* 去掉圆点 */
   padding: 0 20px;
@@ -66,21 +49,18 @@ body {
   align-items: center;
 }
 
-.nav-right li {
-  margin: 0 15px; /* 调整间距 */
+.nav-left li, .nav-right li {
+    margin: 0 15px;
 }
 
-.nav-right a {
-  color: #333333;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.3s;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+.nav-left li a, .nav-right li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
 }
 
-.nav-right a:hover {
-  color: #1E90FF;
-  border-bottom: 2px solid #1E90FF;
+.nav-left li a:hover, .nav-right li a:hover {
+    color: #007bff;
 }
 
 /* 调整主内容区域的顶部间距 */

@@ -6,7 +6,6 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-/* 默认样式 */
 body {
   display: flex;
   flex-direction: column;
@@ -18,8 +17,6 @@ body {
   font-weight: 100;
   color: #130f0f;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 /* 导航栏样式 */
@@ -34,8 +31,6 @@ body {
   align-items: center; /* 垂直居中 */
   background-color: rgba(232, 236, 239, 0.95);
   z-index: 1000;
-  padding: 10px 20px;
-  background-color: #f8f8f8;
 }
 
 .nav-left {
@@ -54,19 +49,8 @@ body {
   align-items: center;
 }
 
-.nav-left, .nav-right {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .nav-left li, .nav-right li {
     margin: 0 15px;
-}
-
-.nav-left li, .nav-right li {
-    margin: 0 10px;
 }
 
 .nav-left li a, .nav-right li a {
@@ -86,9 +70,6 @@ body {
   margin-right: 0; /* 移除右侧边距 */
   padding: 20px;
   width: calc(100% - 40px); /* 调整宽度 */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 /* 主要内容区域 */
 /*.main-container {
@@ -107,8 +88,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 100%;
-  margin-bottom: 20px;
 }
 
 /* 第二、三层：每层两个并行框 */
@@ -120,18 +99,11 @@ body {
   font-weight: lighter; 
   gap: 20px;
   flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 20px;
 }
 
 /* 通用框样式 */
 .box {
   min-width: 50px;
-  width: 30%;
-  padding: 20px;
-  margin: 10px;
-  background-color: #f0f0f0;
-  text-align: center;
 }
 
 .box-1 {
@@ -222,35 +194,4 @@ thin {
   border-left: 2px solid #1E90FF;
   padding-left: 10px;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-}
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-left, .nav-right {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .box {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  .box {
-    width: 100%;
-  }
-
-  .navbar {
-    padding: 10px;
-  }
-
-  .nav-left li, .nav-right li {
-    margin: 5px 0;
-  }
 }

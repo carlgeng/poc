@@ -9,48 +9,24 @@
   <style>
     /* Ensure second row cells have equal height */
     .second-row .cell {
-      display: flex;
+      display: flex; /* Use flex to control height */
       flex-direction: column;
     }
     .second-row .callout {
-      flex-grow: 1;
-      margin-bottom: 0;
+      flex-grow: 1; /* Callouts stretch to fill available space */
+      margin-bottom: 0; /* Remove default margin for consistent height */
     }
     .middle-cell .grid-y {
-      height: 100%;
+      height: 100%; /* Middle cell grid-y takes full height of its container */
     }
     .middle-cell .cell {
-      height: 50%;
-    }
-    /* Style for the title to match the image */
-    .title-row {
-      background-color: #e6f0fa; /* Light blue background as in the image */
-      padding: 1rem 0; /* Add some padding for spacing */
-      text-align: center; /* Center the text */
-    }
-    .title-text {
-      font-size: 1.5rem; /* Default font size for most of the text */
-      color: #333; /* Dark text color */
-      margin: 0; /* Remove default margin */
-    }
-    .title-text .highlight {
-      font-size: 2.5rem; /* Larger font size for "源于" */
-      font-weight: bold; /* Bolder font weight for "源于" */
+      height: 50%; /* Each row in the middle cell takes half the height */
     }
   </style>
 </head>
 <body>
+  <!-- First Row: Two Menus -->
   <div class="grid-container">
-    <!-- Title Row: Matches the image -->
-    <div class="grid-x title-row">
-      <div class="cell small-12">
-        <p class="title-text">
-          创新概念验证<span class="highlight">源于</span>需求
-        </p>
-      </div>
-    </div>
-
-    <!-- First Row: Two Menus -->
     <div class="grid-x grid-margin-x">
       <!-- Left Menu -->
       <div class="cell small-6">
@@ -104,7 +80,7 @@
 
   <!-- Include Foundation JS and jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fresource://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js"></script>
   <script>
     $(document).foundation();
   </script>

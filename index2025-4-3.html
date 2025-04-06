@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&family=Noto+Sans+SC:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>网页框架-包括导航栏居中</title>
+</head>
+<body>
+     <!-- 导航栏 -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/poc/index.html">首页</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="/poc/demand.html">需求提交</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/poc/solution.html">解决方案</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/poc/review.html">评审</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/poc/profile.html">个人中心</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/poc/login.html">登录</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/poc/register.html">注册</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/poc/admin.html">管理员</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- 第一层：三个框 -->
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="p-3 border bg-light">创新概念验证</div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border bg-light">
+                    <div>源于</div>
+                    <div>归于</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border bg-light">需求</div>
+            </div>
+        </div>
+    
+        <!-- 第二层：两个框 -->
+        <div class="row my-4">
+            <div class="col-12">
+                <h2 class="text-center">最新临床需求</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">需求1：...</li>
+                    <li class="list-group-item">需求2：...</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- 第三层：两个框 -->
+        <div class="row my-4">
+            <div class="col-12">
+                <h2 class="text-center">热门创新解决方案</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">方案1：...</li>
+                    <li class="list-group-item">方案2：...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="description">助力解决未满足的临床需求，<thin>推动生命科学的创新。</thin></div>
+
+    <!-- 底部信息 -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>底部信息 © 2025</p>
+    </footer>
+</body>
+<cript src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>
